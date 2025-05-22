@@ -186,7 +186,7 @@ function createBird() {
 function createTileMap() {
   bottomSpikes.spriteSheet = sheetImg;
   bottomSpikes.addAni({ w: 16, h: 16, row: 0, col: 0 });
-  bottomSpikes.anis.offset.y = -3;
+  bottomSpikes.anis.offset.y = -4;
   bottomSpikes.w = 13;
   bottomSpikes.h = 13;
   bottomSpikes.tile = "b";
@@ -196,7 +196,7 @@ function createTileMap() {
   leftSpikes.spriteSheet = sheetImg;
   leftSpikes.addAni({ w: 16, h: 16, row: 0, col: 1 });
   leftSpikes.tile = "l";
-  leftSpikes.anis.offset.x = 3;
+  leftSpikes.anis.offset.x = 4;
   leftSpikes.h = 10;
   leftSpikes.collider = "static";
   leftSpikes.collides(bird.sprite, spikeCollision);
@@ -204,7 +204,7 @@ function createTileMap() {
   topSpikes.spriteSheet = sheetImg;
   topSpikes.addAni({ w: 16, h: 16, row: 0, col: 2 });
   topSpikes.tile = "t";
-  topSpikes.anis.offset.y = 3;
+  topSpikes.anis.offset.y = 4;
   topSpikes.h = 13;
   topSpikes.w = 13;
   topSpikes.collider = "static";
@@ -213,7 +213,7 @@ function createTileMap() {
   rightSpikes.spriteSheet = sheetImg;
   rightSpikes.addAni({ w: 16, h: 16, row: 0, col: 3 });
   rightSpikes.tile = "r";
-  rightSpikes.anis.offset.x = -3;
+  rightSpikes.anis.offset.x = -4;
   rightSpikes.h = 10;
   rightSpikes.collider = "static";
   rightSpikes.collides(bird.sprite, spikeCollision);
